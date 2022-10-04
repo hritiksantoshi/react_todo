@@ -9,6 +9,7 @@ function ShowTodo(props) {
                     <h6>{props.task}</h6>
                 </div>
                 <div className="col-6">
+                <button onClick={() => {props.onEdit({text:props.task,id:props.id})}}>Edit</button>
                 <button onClick={()=>{
                     props.onSelcet(props.id)
                 }}>X</button>
